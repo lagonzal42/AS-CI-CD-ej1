@@ -8,4 +8,6 @@ jobs:
       - name: Bajar_codigo
         uses: actions/checkout@v7
       - name: run_test_file
-        run: python3 test.py
+        run: |
+          pip install pytest
+          pytest test.py
